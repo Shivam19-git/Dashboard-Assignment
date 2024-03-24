@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+.logo-text {
+  display: flex;
+  margin: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 1.8em;
+  color: rgb(255, 249, 249);
+}
+
+.logo-span {
+  color: orange;
+}
+
+.menu-bar {
+  height: 100vh;
+  overflow: auto;
+}
+
+.sidebar {
+  color: #fff;
+  width: 300px;
+  height: 100vh;
+  min-height: 100vh; 
+  overflow-y: hidden; 
+  overflow-x: hidden; 
+}
+
+.menu-bar {
+  height: 88vh;
+  font-size: 1.2em;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  position: relative;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.collapse-button {
+  font-size: 1.6em;
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+/* Styling for collapsed button */
+.ant-btn-text {
+  color: #000; /* Adjust color as needed */
+  font-size: 16px; /* Adjust font size as needed */
+}
+
+.ant-btn-text:hover {
+  color: #1890ff; /* Adjust hover color as needed */
+}
+
+.toggle-theme-button {
+  position: fixed;
+  bottom: 30px;
+  left: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+}
+
+.light-theme {
+  color: rgb(255, 255, 255); /* Change font color to black */
+}
+
+.dark-theme {
+  color: rgb(0, 0, 0); /* Change font color to white for dark mode */
+}
+
+.heading {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  gap: 560px;
+}
+
+.user-controls {
+  display: flex;
+  gap: 15px;
+  margin-left: auto; 
+  position: absolute; 
+  right: 50px; 
+  top: 4%; 
+  transform: translateY(-50%);
+}
+
