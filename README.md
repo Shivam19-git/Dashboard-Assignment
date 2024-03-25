@@ -1,5 +1,8 @@
 React Dashboard
-This project is a React dashboard with multiple features including task management, dark/light theme toggling, and interactive navigation. It provides routes for various menu items and sub-menu options and placeholder data.
+
+This project is a React dashboard with multiple features including task management, dark/light theme toggling, and interactive navigation. 
+
+It provides routes for various menu items and sub-menu options and placeholder data.
 
 Features
 Task Management: Users can add and delete tasks in the dashboard.
