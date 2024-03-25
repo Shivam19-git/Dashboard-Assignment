@@ -1,5 +1,5 @@
 React Dashboard
-This project is a React dashboard with multiple features including task management, dark/light theme toggling, and interactive navigation. It provides placeholder routes for various menu items and sub-menu options.
+This project is a React dashboard with multiple features including task management, dark/light theme toggling, and interactive navigation. It provides routes for various menu items and sub-menu options and placeholder data.
 
 Features
 Task Management: Users can add and delete tasks in the dashboard.
@@ -21,9 +21,11 @@ Ensure you have the following packages installed:
 3. react-router-dom
 4. antd
 5. @ant-design/icons
+
+
 You can install these dependencies using npm:
-npm install react
-npm install react-dom
-npm install react-router-dom
-npm install antd
-npm install @ant-design/icons
+1. npm install react
+2. npm install react-dom
+3. npm install react-router-dom
+4. npm install antd
+5. npm install @ant-design/icons
