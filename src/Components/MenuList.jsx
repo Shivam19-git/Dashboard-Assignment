@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Menu, Input, Button } from 'antd';
-import { BrowserRouter as Router, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Link, useLocation } from 'react-router-dom';
+
 import {
   HomeOutlined,
   SettingOutlined,
@@ -37,7 +38,7 @@ const MenuList = ({ darkTheme }) => {
     const newTask = taskInputValue.trim();
     if (newTask !== '') {
       setTaskList(prevTasks => [...prevTasks, newTask]);
-      setTaskInputValue(''); // Clear the text area after adding the task
+      setTaskInputValue('');
     }
   };
 
@@ -46,97 +47,109 @@ const MenuList = ({ darkTheme }) => {
   };
 
   return (
-    <Router>
-      <div>
-        <Menu
-          theme={darkTheme ? 'dark' : 'light'}
-          mode="inline"
-          className='menu-bar'
-          openKeys={openKeys}
-          onOpenChange={handleOpenChange}
-        >
-          <Menu.Item key="home" icon={<HomeOutlined />}>
-            <Link to="/">Home</Link>
-          </Menu.Item>
-          <SubMenu key="tasks" icon={<BookOutlined />} title="Tasks">
-            <TextArea
-              rows={1}
-              placeholder="Enter task"
-              value={taskInputValue}
-              onChange={(e) => setTaskInputValue(e.target.value)}
-            />
-            <Button type="primary" onClick={handleAddTask} icon={<PlusOutlined />}>Add Task</Button>
-            {taskList.map((task, index) => (
-              <Menu.Item key={`task-${index}`} icon={<DeleteOutlined />} onClick={() => handleDeleteTask(index)}>
-                {task}
+
+    <div>
+      <Menu
+        theme={darkTheme ? 'dark' : 'light'}
+        mode="inline"
+        className='menu-bar'
+        openKeys={openKeys}
+        onOpenChange={handleOpenChange}
+      >
+        <Menu.Item key="home" icon={<HomeOutlined />}>
+          <Link to="/">Home</Link>
+        </Menu.Item>
+        <SubMenu key="tasks" icon={<BookOutlined />} title="Tasks">
+          <TextArea
+            rows={1}
+            placeholder="Enter task"
+            value={taskInputValue}
+            onChange={(e) => setTaskInputValue(e.target.value)}
+          />
+          <Button type="primary" onClick={handleAddTask} icon={<PlusOutlined />}>Add Task</Button>
+          {taskList.map((task, index) => (
+            <Menu.Item key={`task-${index}`} icon={<DeleteOutlined />} onClick={() => handleDeleteTask(index)}>
+              {task}
+            </Menu.Item>
+          ))}
+        </SubMenu>
+        <SubMenu key="research" icon={<SearchOutlined />} title="Research" className="sub-menu-item">
+          <SubMenu key="external" title="External">
+            <SubMenu key="b2b" title="B2B">
+              <Menu.Item key="b2b-1">
+                <Link to="/external/b2b/online">Online</Link>
               </Menu.Item>
-            ))}
-          </SubMenu>
-          <SubMenu key="research" icon={<SearchOutlined />} title="Research" className="sub-menu-item">
-            <SubMenu key="external" title="External">
-              <SubMenu key="b2c" title="B2B">
-                <Menu.Item key="b2c-1">
-                  <Link to="/online">Online</Link>
-                </Menu.Item>
-                <Menu.Item key="b2c-2">
-                  <Link to="/interview">Interview</Link>
-                </Menu.Item>
-                <Menu.Item key="b2c-3">
-                  <Link to="/publicdata">Public Data</Link>
-                </Menu.Item>
-                <Menu.Item key="b2c-4">
-                  <Link to="/health">Health</Link>
-                </Menu.Item>
-              </SubMenu>
-              <SubMenu key="b2b" title="B2C" className="sub-menu-item">
-                <Menu.Item key="b2b-retailstore">Retail Stores</Menu.Item>
-                <Menu.Item key="b2b-traditionalretail">Traditional Retail</Menu.Item>
-              </SubMenu>
+              <Menu.Item key="b2b-2">
+                <Link to="/external/b2b/interview">Interview</Link>
+              </Menu.Item>
+              <Menu.Item key="b2b-3">
+                <Link to="/external/b2b/publicdata">Public Data</Link>
+              </Menu.Item>
+              <Menu.Item key="b2b-4">
+                <Link to="/external/b2b/health">Health</Link>
+              </Menu.Item>
             </SubMenu>
-            <SubMenu key="internal" title="Internal">
-              <Menu.Item key="Task-1">Strategy Deployment</Menu.Item>
-              <Menu.Item key="Task-2">Employee Training</Menu.Item>
+            <SubMenu key="b2c" title="B2C">
+              <Menu.Item key="b2c-1">
+                <Link to="/external/b2c/retailer">Retailer</Link>
+
+              </Menu.Item>
+              <Menu.Item key="b2c-2">
+                <Link to="/external/b2c/reseller">Reseller</Link>
+              </Menu.Item>
             </SubMenu>
           </SubMenu>
-          <SubMenu key="planning" icon={<CalendarOutlined />} title="Planning" className="sub-menu-item">
-            <Menu.Item key="prd">
-              <Link to="/prd">PRD</Link>
+          <SubMenu key="internal" title="Internal">
+            <Menu.Item key="Task-1">
+              <Link to="/internal/strategydeployment">Strategy Deployment</Link>
             </Menu.Item>
-            <Menu.Item key="specs">
-              <Link to="/specs">Specs</Link>
-            </Menu.Item>
-          </SubMenu>
-          <SubMenu key="designing" icon={<ToolOutlined />} title="Designing" className="sub-menu-item">
-            <Menu.Item key="hardware">
-              <Link to="/hardware">Hardware</Link>
-            </Menu.Item>
-            <Menu.Item key="software">
-              <Link to="/software">Software</Link>
+            <Menu.Item key="Task-2">
+              <Link to="/internal/employeetraining">Employee Training</Link>
             </Menu.Item>
           </SubMenu>
-          <SubMenu key="manufacturing" icon={<BuildOutlined />} title="Manufacturing" className="sub-menu-item">
-            <Menu.Item key="material">Material</Menu.Item>
-            <Menu.Item key="production">Production</Menu.Item>
-          </SubMenu>
-          <SubMenu key="marketing" icon={<AreaChartOutlined />} title="Marketing" >
-            <SubMenu key="online" title="Online">
-              <Menu.Item key="online1">Website</Menu.Item>
-              <Menu.Item key="online2">Social Media</Menu.Item>
-            </SubMenu>
-            <SubMenu key="dealership" title="Dealership">
-              <Menu.Item key="dealership1">Direct Dealers</Menu.Item>
-              <Menu.Item key="dealership2">Reseller Networks</Menu.Item>
-            </SubMenu>
-          </SubMenu>
-          <Menu.Item key="sales" icon={<ShopOutlined />}>
-            Sales
+        </SubMenu>
+        <SubMenu key="planning" icon={<CalendarOutlined />} title="Planning" className="sub-menu-item">
+          <Menu.Item key="prd">
+            <Link to="/prd">PRD</Link>
           </Menu.Item>
-          <Menu.Item key="setting" icon={<SettingOutlined />}>
-            Setting
+          <Menu.Item key="specs">
+            <Link to="/specs">Specs</Link>
           </Menu.Item>
-        </Menu>
-      </div>
-    </Router>
+        </SubMenu>
+        <SubMenu key="designing" icon={<ToolOutlined />} title="Designing" className="sub-menu-item">
+          <Menu.Item key="hardwarekey">
+            <Link to="/hardware">Hardware</Link>
+          </Menu.Item>
+          <Menu.Item key="softwarekey">
+            <Link to="/software">Software</Link>
+          </Menu.Item>
+        </SubMenu>
+        <SubMenu key="manufacturing" icon={<BuildOutlined />} title="Manufacturing" className="sub-menu-item">
+          <Menu.Item key="material">
+            <Link to="/manufacturing/material">Material</Link>
+          </Menu.Item>
+          <Menu.Item key="production">
+          <Link to="/manufacturing/supplychain">Supply Chain</Link>
+          </Menu.Item>
+        </SubMenu>
+        <SubMenu key="marketing" icon={<AreaChartOutlined />} title="Marketing" >
+        <Menu.Item key="production">
+          <Link to="/onlinemarketing">Online</Link>
+          </Menu.Item>
+          <Menu.Item key="production">
+          <Link to="/dealership">Dealership</Link>
+          </Menu.Item>
+        </SubMenu>
+        <Menu.Item key="sales" icon={<ShopOutlined />}>
+        <Link to="/sales">Sales</Link>
+        </Menu.Item>
+        <Menu.Item key="setting" icon={<SettingOutlined />}>
+        <Link to="/settings">Settings</Link>
+        </Menu.Item>
+      </Menu>
+
+    </div>
+
   );
 };
 

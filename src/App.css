@@ -69,6 +69,14 @@
 .ant-btn-text:hover {
   color: #1890ff; /* Adjust hover color as needed */
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: black; /* Set the font color to black */
+}
+
 
 .toggle-theme-button {
   position: fixed;
@@ -104,5 +112,812 @@
   right: 50px; 
   top: 4%; 
   transform: translateY(-50%);
+}
+
+/* Routes CSS styling */
+.external-b2b-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.overview-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.overview-item {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.overview-item h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.overview-item p {
+  color: #333;
+  font-weight: bold;
+}
+
+.overview-item ul {
+  padding: 0;
+  margin: 0;
+}
+
+.overview-item li {
+  margin-bottom: 5px;
+  color: #666;
+}
+
+.on-render-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.project-details-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.project-detail-item {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.project-detail-item h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.project-detail-item p, .project-detail-item li {
+  color: #333;
+}
+
+.project-detail-item ul {
+  padding: 0;
+  margin: 0;
+}
+
+.project-detail-item li {
+  margin-bottom: 5px;
+  color: #666;
+}
+.home-page-heading{
+  font-size: 2.8em;
+}
+.external-b2b-interview-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.interview-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.interview-topic {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.interview-topic h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.interview-topic p {
+  color: #333;
+  font-weight: bold;
+}
+
+.interview-topic ul {
+  padding: 0;
+  margin: 0;
+}
+
+.interview-topic li {
+  margin-bottom: 5px;
+  color: #666;
+}
+.public-data-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.data-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.data-topic {
+  flex: 1 1 200px;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.data-topic h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.data-topic p {
+  color: #333;
+  font-weight: bold;
+}
+.health-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.health-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.health-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.health-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.health-topic {
+  padding: 10px;
+}
+
+.health-topic p {
+  color: #333;
+  margin-bottom: 5px;
+}
+.retail-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.retail-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.retail-section {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.retail-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.retail-topic {
+  padding: 10px;
+}
+
+.retail-topic p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.retail-topic ul {
+  list-style: none;
+  padding: 0;
+}
+
+.retail-topic ul li {
+  margin-bottom: 5px;
+}
+
+.retail-topic table {
+  width: 100%;
+}
+
+.retail-topic table td {
+  padding: 5px 0;
+}
+
+.retail-topic table td:first-child {
+  font-weight: bold;
+}
+.reseller-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.reseller-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.reseller-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.reseller-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.reseller-topic {
+  padding: 10px;
+}
+
+.reseller-topic p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.inventory-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.inventory-item {
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.inventory-item p {
+  margin: 5px 0;
+}
+.strategy-deployment-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.strategy-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.strategy-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.strategy-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.strategy-section p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.strategy-section ul {
+  padding-left: 20px;
+}
+
+.strategy-section li {
+  color: #333;
+  margin-bottom: 5px;
+}
+.employee-training-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.training-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.training-program {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.training-program h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.training-program p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.prd-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.prd-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.prd-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.prd-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.prd-section ul,
+.prd-section p {
+  color: #333;
+}
+
+.prd-section ul li {
+  margin-bottom: 5px;
+}
+.specs-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.specs-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.specs-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.specs-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.specs-topic {
+  padding: 10px;
+}
+
+.specs-topic p {
+  color: #333;
+  margin-bottom: 5px;
+}
+.hardware-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.hardware-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.hardware-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.hardware-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.hardware-section p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+.hardware-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.hardware-section li {
+  color: #333;
+}
+.software-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.software-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.software-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.software-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.software-section p {
+  color: #333;
+}
+.material-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.material-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.material-section {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.material-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.material-topic {
+  padding: 10px;
+}
+
+.material-topic p {
+  color: #333;
+  margin-bottom: 5px;
+}
+.supply-chain-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.supply-chain-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.supply-chain-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.supply-chain-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.supply-chain-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.supply-chain-section ul li {
+  color: #333;
+  margin-bottom: 5px;
+}
+.sales-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.sales-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.sales-section {
+  flex: 1 1 45%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.sales-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.sales-section p {
+  color: #333;
+  font-weight: bold;
+}
+
+.sales-section ul {
+  padding: 0;
+  margin: 0;
+}
+
+.sales-section li {
+  color: #333;
+  margin-bottom: 5px;
+}
+.settings-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.heading {
+  color: #333;
+  text-align: center;
+}
+
+.settings-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.settings-section {
+  flex: 1 1 30%;
+  background-color: #f9f9f9;
+  padding: 20px;
+  margin: 10px 0;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.settings-section h2 {
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.settings-topic {
+  padding: 10px;
+}
+
+.settings-topic p {
+  color: #333;
+  margin-bottom: 5px;
+}
+
+
+
+
+/* Small smartphones (portrait orientation) */
+@media only screen and (max-width: 480px) {
+  .logo-text{
+    font-size: 1.2rem;
+  }
+  .sidebar {
+    color: #fff;
+    width: 300px;
+    height: 100vh;
+    overflow: auto;
+   
+  }
+  .heading{
+    font-size:14px;
+
+  }
+}
+
+/* Small smartphones (landscape orientation) */
+@media only screen and (max-width: 768px) {
+  .heading{
+    font-size:18px;
+
+  }
+  .sidebar {
+    color: #fff;
+    width: 300px;
+    height: 100vh;
+    overflow: auto;
+    font-size: 1.2em;
+   
+  }
+  /* CSS styles for small smartphones in landscape mode */
+}
+
+/* Standard smartphones */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  /* CSS styles for standard smartphones */
+}
+
+/* Larger smartphones / small tablets */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  /* CSS styles for larger smartphones / small tablets */
+}
+
+/* Tablets */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  /* CSS styles for tablets */
+}
+
+/* Tablets in landscape mode */
+@media only screen and (min-width: 1025px) and (max-width: 1199px) {
+  /* CSS styles for tablets in landscape mode */
+}
+
+/* Standard desktops and laptops */
+@media only screen and (min-width: 1200px) {
+  /* CSS styles for standard desktops and laptops */
+}
+
+/* Large desktops and high-resolution displays */
+@media only screen and (min-width: 1600px) {
+  /* CSS styles for large desktops and high-resolution displays */
+}
+
+/* Extra-large desktops and displays */
+@media only screen and (min-width: 1920px) {
+  /* CSS styles for extra-large desktops and displays */
+}
+
+/* Ultra-wide displays */
+@media only screen and (min-width: 2560px) {
+  /* CSS styles for ultra-wide displays */
 }
 
