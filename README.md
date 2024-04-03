@@ -14,7 +14,8 @@ To Run the project locally follow these steps
 1. Clone this Repository
 2. cd 'folder-name'
 3. npm install
-4. npm run dev
+4. npm start
+   
 
 Dependencies
 Ensure you have the following packages installed:
